@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Música</title>
+    <link rel="website icon" type="png" href="icon_violino.png">
+</head>
+<body>
+    <div class="base">
+        <form action="">
+            <h1>INSCREVA-SE</h1>
+            <h2>CURSO DE CORDAS</h2>
+            <fieldset>
+                <legend>NOME</legend>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu primeiro nome" required>
+            </fieldset>
+            <fieldset>
+                <legend>SOBRENOME</legend>
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome" required>
+            </fieldset>
+            <fieldset>
+                <legend>EMAIL</legend>
+                <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+            </fieldset>
+            <fieldset>
+                <legend>SENHA</legend>
+                <input type="password" name="senha" id="senha" placeholder="digite sua senha" required>
+            </fieldset>
+            <fieldset>
+                <legend>DATA</legend>
+                <input type="date" name="data" id="data">
+            </fieldset>
+            <fieldset>
+                <legend>GÊNERO</legend>
+                <input type="radio" name="gender" id="Masculino">
+                <label for="Masculino">Masculino</label>
+                <input type="radio" name="gender" id="Feminino">
+                <label for="Feminino">Feminino</label>
+                <input type="radio" name="gender" id="Outro">
+                <label for="Outro">Outro</label>
+            </fieldset>
+            <fieldset>
+                <legend>INSTRUMETO DE INTERESSE</legend>
+                <input type="checkbox" name="instrumento" id="Violino">
+                <label for="Violino">Violino</label>
+                <input type="checkbox" name="instrumento" id="Viola">
+                <label for="Viola">Viola</label>
+                <input type="checkbox" name="instrumento" id="Cello">
+                <label for="Cello">Cello</label>
+                <input type="checkbox" name="instrumento" id="Contrabaixo">
+                <label for="Contrabaixo">Contrabaixo</label>
+                <input type="checkbox" name="instrumento" id="Violão">
+                <label for="Violão">Violão</label>
+                <input type="checkbox" name="instrumento" id="Ukulele">
+                <label for="Ukulele">Ukulele</label>
+            </fieldset>
+            <center><button type="submit"><h2>ENVIAR</h2></button></center>
+            <div class="texto">
+                <p><h3>Apoie nosso projeto nos acompanhando em nossa pagina do <a href="https://www.instagram.com/">instagram</a></h3></p>
+                <img src="icon_violino.png" alt="violino" width="30px" height="30px">
+                <img src="icon_violino.png" alt="violino" width="30px" height="30px" class="dois">
+            </div>
+        </form>
+    </div>    
+<style> 
+    .base { 
+        background-color: rgb(204, 98, 27);
+        position: absolute;
+        display: flex;
+        left: 30%;
+        justify-content: center;
+        height: 98%;
+        width: 40%;
+        border-radius: 20px;
+        opacity: 0.9;
+    }
+        body{
+            background-image: url(VIOLINO2.jpg);
+            background-repeat: no-repeat;
+        }
+            button{
+                border-radius: 20px;
+            }
+            .dois{
+                position: absolute;
+                left: 90%;
+                top: 1%;
+                display: flex;
+            }
+</style>
+</body>
+</html>
