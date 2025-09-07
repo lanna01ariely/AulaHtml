@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cadastro - SennaSing</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body style ="background-color: #f6a763">
+
+  <!-- Cabeçalho -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">SennaSing</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="cadastro.html">Cadastro</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main class="container my-5 text-white p-4" style="background-color: rgba(0, 0, 0, 0.6); border-radius: 10px;">
+    <h2 class="mb-4">Formulário de Cadastro</h2>
+
+    <form action="sucesso.html">
+      <!-- Nome -->
+      <div class="mb-3">
+        <label for="nome" class="form-label">Nome</label>
+        <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+      </div>
+
+      <!-- Sobrenome -->
+      <div class="mb-3">
+        <label for="sobrenome" class="form-label">Sobrenome</label>
+        <input type="text" class="form-control" id="sobrenome" placeholder="Digite seu sobrenome" required>
+      </div>
+
+      <!-- E-mail -->
+      <div class="mb-3">
+        <label for="email" class="form-label">E-mail</label>
+        <input type="email" class="form-control" id="email" placeholder="exemplo@gmail.com" required>
+      </div>
+
+      <!-- Senha -->
+      <div class="mb-3">
+        <label for="senha" class="form-label">Senha</label>
+        <input type="password" class="form-control" id="senha" required>
+      </div>
+
+      <!-- Data de Nascimento -->
+      <div class="mb-3">
+        <label for="dataNascimento" class="form-label">Data de Nascimento</label>
+        <input type="date" class="form-control" id="dataNascimento" required>
+      </div>
+
+      <!-- Gênero -->
+      <div class="mb-3">
+        <label class="form-label">Gênero</label><br>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="genero" id="generoMasculino" value="masculino">
+          <label class="form-check-label" for="generoMasculino">Masculino</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="genero" id="generoFeminino" value="feminino">
+          <label class="form-check-label" for="generoFeminino">Feminino</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="genero" id="generoOutro" value="outro">
+          <label class="form-check-label" for="generoOutro">Outro</label>
+        </div>
+      </div>
+
+      <!-- Interesses -->
+      <div class="mb-3">
+        <label class="form-label">Interesses</label><br>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="interesseTecnicaVocal">
+          <label class="form-check-label" for="interesseTecnicaVocal">Técnica Vocal</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="interesseAfinação">
+          <label class="form-check-label" for="interesseAfinação">Afinação</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="interessePerformance">
+          <label class="form-check-label" for="interessePerformance">Performance</label>
+        </div>
+      </div>
+
+      <!-- Botões -->
+      <div class="mb-3">
+        <button type="submit" class="btn btn-primary">Enviar</button>
+        <button type="reset" class="btn btn-secondary">Limpar</button>
+      </div>
+    </form>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2025 SennaSing Curso de Canto. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <style> 
+        body{
+            background-image: url(https://static.vecteezy.com/system/resources/previews/022/375/994/large_2x/microphone-in-the-background-of-the-audience-free-photo.jpg);
+            background-repeat: no-repeat;
+        }
+</style>
+</body>
+</html>
